@@ -24,16 +24,16 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 // Routes
-app.use('/api/get-mocktest', require('./routes/get-mocktest'));
-app.use('/api/submit-result', require('./routes/submit-result'));
-app.use('/api/get-bookmarked', require('./routes/get-bookmarked'));
-app.use('/api/delete-bookmark', require('./routes/delete-bookmark'));
-app.use('/api/get-editorials', require('./routes/get-editorials'));
-app.use('/api/get-vocab', require('./routes/get-vocab'));
-app.use('/api/get-gk', require('./routes/get-gk'));
-app.use('/api/get-maths', require('./routes/get-maths'));
-app.use('/api/get-grammar-text', require('./routes/get-grammar-text'));
-app.use('/api/get-typing-text', require('./routes/get-typing-text'));
+app.use('/api/getmocktest', require('./routes/getmocktest'));
+app.use('/api/submitresult', require('./routes/submitresult'));
+app.use('/api/getbookmarked', require('./routes/getbookmarked'));
+app.use('/api/deletebookmark', require('./routes/deletebookmark'));
+app.use('/api/geteditorials', require('./routes/geteditorials'));
+app.use('/api/getvocab', require('./routes/getvocab'));
+app.use('/api/getgk', require('./routes/getgk'));
+app.use('/api/getmaths', require('./routes/getmaths'));
+app.use('/api/getgrammartext', require('./routes/getgrammartext'));
+app.use('/api/gettypingtext', require('./routes/gettypingtext'));
 
 // Test route
 app.get('/', (req, res) => {
